@@ -1,83 +1,13 @@
-//void setup() {
-//  size(displayWidth, displayHeight);
-//  background(0,0,0);
-//  noStroke();
-//  noCursor();
-//}
-
-//void draw() {
-//  //fill(0, 0, 0, 20);
-//  //rect(0, 0, width, height);
-  
-//  //fill(random(255), random(255), random(255), random(255));
-//  //ellipse(random(width), random(height), 50, 50);
-  
-//  // Below begins rectangle mapping
-//  fill(0,250,0);
-//  rect(5.2083336E-4 * width, 0.7462963 * height, 43, 29);
-  
-//  fill(0,250,0);
-//  rect(0.06302083 * width, 0.7972222 * height, 43, 29);
-  
-//  fill(0,250,0);
-//  rect(0.08645833 * width, 0.7712963 * height, 43, 29);
-  
-//  fill(0,250,0);
-//  rect(0.122395836 * width, 0.7712963 * height, 43, 29);
-  
-//  fill(0,250,0);
-//  rect(0.17916666 * width, 0.7972222 * height, 44, 29);
-  
-//  fill(0,250,0);
-//  rect(0.2765625 * width, 0.7685185 * height, 44, 29);
-  
-//  fill(0,250,0);
-//  rect(0.29895833 * width, 0.7425926 * height, 44, 29);
-  
-//  fill(0,250,0);
-//  rect(0.35364583 * width, 0.7425926 * height, 44, 29);
-  
-//  fill(0,250,0);
-//  rect(0.3875 * width, 0.7962963 * height, 44, 29);
-  
-//  fill(0,250,0);
-//  rect(0.41041666 * width, 0.7962963 * height, 44, 29);
-  
-//  fill(0,250,0);
-//  rect(0.43385416 * width, 0.7685185 * height, 44, 29);
-  
-//  fill(0,250,0);
-//  rect(0.48645833 * width, 0.7425926 * height, 44, 29);
-  
-//  fill(0,250,0);
-//  rect(0.50885415 * width, 0.7685185 * height, 44, 29);
-  
-//  fill(0,250,0);
-//  rect(0.5640625 * width, 0.85925925 * height, 49, 34);
-  
-//  fill(0,250,0);
-//  rect(0.4609375 * width, 0.8851852 * height, 45, 30);
-  
-//  fill(0,250,0);
-//  rect(0.66041666 * width, 0.0 * height, 651, 635);
-  
-//  fill(0,250,0);
-//  rect(0.66041666 * width, 0.5824074 * height, 651, 450);
-  
-//  fill(250,250,250);
-//  rect(0.66041666 * width, -9.259259E-4 * height, 651, 71);
-//}
-
 PImage img;
 PImage img2;
 int pointillize = 12;
 
 void setup() {
-  size(displayWidth,displayHeight);
+  fullScreen();
   img = loadImage("Picture1.png");
   img2 = loadImage("Picture4.jpg");
-  img.resize(500, 350);
-  img2.resize(500, 525);
+  img.resize(651, 450);
+  img2.resize(651, 635);
   background(0);
   smooth();
 }
@@ -114,7 +44,6 @@ void draw() {
   // Draw an ellipse at that location with that color
   fill(r2,g2,b2,100);
   ellipse((0.66041666 * width) + x2, (0.0 * height) + y2,pointillize,pointillize);
-  
   
   // Below begins rectangle mapping
   fill(100,23,77);
@@ -161,5 +90,4 @@ void draw() {
   
   fill(random(250),random(250),random(250));
   rect(0.4609375 * width, 0.8851852 * height, 45, 30);
-
 }
